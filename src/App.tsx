@@ -1,25 +1,29 @@
+import { styled } from '@stitches/react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Grid from './Components/Grid';
+import { WordleContext } from './context/WordleContext';
+
+const Container = styled('div', {
+  height:'100vh',
+  width:'100vw',
+  display: 'flex',
+  alignItems:'center',
+  justifyContent:'center',
+  flexDirection:'column',
+});
 
 function App() {
+
+  const [word, setWord] = React.useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WordleContext.Provider value={{word}}>
+    <Container>
+      <Grid/>
+      <input maxLength={5} type="text" onChange={(e) => setWord(e.currentTarget.value)}/>
+    </Container> 
+    </WordleContext.Provider>
+
   );
 }
 
