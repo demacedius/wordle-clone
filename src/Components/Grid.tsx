@@ -13,14 +13,15 @@ const StyledGrid = styled("div", {
 function Grid(){
     return(
         <StyledGrid>
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
-            <Row />
+            <Row isActive/>
+            <Row isActive={false}/>
+            <Row isActive={false}/>
+            <Row isActive={false}/>
+            <Row isActive={false}/>
+            <Row isActive={false}/>
         </StyledGrid>
     )
 }
+
 
 export default Grid;

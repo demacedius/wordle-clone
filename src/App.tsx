@@ -14,7 +14,7 @@ const Container = styled('div', {
 
 function App() {
 
-  const [word, setWord] = React.useState("");
+  const [word, setWord] = React.useState('');
 
   return (
     <WordleContext.Provider value={{word}}>

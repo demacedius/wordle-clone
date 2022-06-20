@@ -3,8 +3,9 @@ import Letter from './Letter';
 
 
 interface ILetter{
-    word: string;
-}
+    word: string,
+};
+
 const StyledSquare = styled("div",{
     height:'100%',
     flex: '1',
