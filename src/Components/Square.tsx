@@ -1,9 +1,8 @@
 import { styled } from '@stitches/react';
 import Letter from './Letter';
 
-
-interface ILetter{
-    word: string,
+interface ILetter {
+  word: string,
 };
 
 const StyledSquare = styled("div",{
