@@ -3,7 +3,7 @@ import Row from "./Row";
 
 const StyledGrid = styled("div", {
     width:'350px',
-    height:'420px',
+    height:'380px',
     backgroundColor:'white', 
     display:'flex',
     flexDirection:'column',

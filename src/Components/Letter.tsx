@@ -12,7 +12,7 @@ const StyledLetter = styled('div',{
 });
 function Letter (props: ILetter) {
   return (
-    <StyledLetter></StyledLetter>  
+    <StyledLetter>{props.word}</StyledLetter>  
   );
 }
 
