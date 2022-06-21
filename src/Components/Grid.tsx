@@ -13,7 +13,7 @@ const StyledGrid = styled("div", {
 function Grid(){
     return(
         <StyledGrid>
-            <Row isActive={true}/>
+            <Row isActive/>
             <Row isActive={false}/>
             <Row isActive={false}/>
             <Row isActive={false}/>
